@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx101</title>
+</head>
+<body>
+
+    <h1>Welcome to the RegEx101 Page</h1>
+
+    <form action="{{ url_for('index') }}" , method="post">
+        <label>Test String</label>
+        <input type="text" name = "target" value = {{ target }}> <br><br>
+        <label>Regular Expression</label>
+        <input type="text" name = "regex" value = {{ regex }}> <br><br>
+        <input type="Submit" value="Submit"> <br><br>
+    </form>
+
+    String : {{ target }} <br>
+    Result : {{ lst }} <br>
+    length : {{ length_lst }} <br>
+
+    
+</body>
+</html>
